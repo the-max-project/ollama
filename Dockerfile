@@ -10,6 +10,7 @@ ARG OLLAMA_DEBUG
 # Set environment variables for non-root user and new models path
 ENV OLLAMA_HOST=0.0.0.0 \
     OLLAMA_MODELS=/home/ollama/.ollama \
+    OLLAMA_MAX_LOADED_MODELS=1 \
     DEBUG=$OLLAMA_DEBUG
 
 # Install dependencies needed for the Ollama install script
