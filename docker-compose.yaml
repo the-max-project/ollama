@@ -8,6 +8,8 @@ services:
     build: .
     container_name: ollama
     restart: unless-stopped
+    environment:
+      - OLLAMA_CONTEXT_LENGTH=65536
 
     deploy:
       resources:
